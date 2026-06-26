@@ -1,0 +1,17 @@
+# Fly.io config for dhundetox-social
+# Pure background worker — no HTTP service, 4 Python schedulers run 24/7
+app = "dhundetox-social"
+primary_region = "sin"   # Singapore — closest to India, good latency to IG/FB API
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  TZ = "UTC"
+
+[[vm]]
+  size   = "shared-cpu-1x"
+  memory = "512mb"
+
+# No [[services]] or [http_service] — this is a worker, not a web server.
+# Fly will keep the machine running indefinitely without HTTP traffic.
