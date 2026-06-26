@@ -1,0 +1,7 @@
+google-genai
+Pillow
+python-dotenv
+cloudinary
+requests
+schedule
+imageio-ffmpeg

@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+output/
+community/output/
+quiz/output/
+tips/output/
+*.mp4
+*.jpg
+*.jpeg
+*.png
+!assets/
